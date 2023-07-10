@@ -1,0 +1,114 @@
+/* reset */
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+/* estilos generales */
+
+
+body{
+    background-color: whitesmoke;
+}
+
+/* estilos del header */
+
+header{
+    background-color: rgb(99, 92, 92);
+}
+
+header nav div ul li{
+    margin-top: 1rem;
+    padding: 0.3rem;
+    background-color: rgb(231, 220, 220);
+}
+
+/* estilos del main */
+
+main{
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+    font-family: 'Fira Sans Condensed', sans-serif;
+    margin-top: 1rem;
+    text-align: center;
+}
+
+main h1{
+    margin-bottom: 1rem;
+}
+
+main h2{
+    margin-top: 1rem;
+    display: none;
+}
+
+main p{
+    margin-bottom: 1rem;
+    padding: 1rem;
+}
+
+main div img{
+    width: 100%;
+    padding: 1rem;
+}
+
+main section div.imagenes-ocultas img{
+    display: none;
+}
+
+/* estilos del footer */
+
+footer{
+    background-color: rgb(99, 92, 92);
+    text-align: center;
+    font-family: 'Fira Sans Condensed', sans-serif;
+    font-size: 1rem;
+    margin-top: 3rem;
+    padding: 1rem;
+}
+
+
+
+/* estilos de campanias */
+
+main div.fotos-varias img{
+    width: 100%;
+    padding: 1rem;
+}
+
+
+/* mq para desktop */
+
+@media screen and (min-width:1024px) {
+    
+    main div.primeras-fotos{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    main section h2 {
+        display: inline;
+    }
+
+    main section div.imagenes-ocultas img {
+        display: inline;
+    }
+
+    /* mq para campanias */
+
+    main div.fotos-varias{
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+    }
+
+    /* mq para ofertas */
+
+    main div.nuestras-ofertas{
+        display: grid;
+        grid-template-columns: repeat(5, 1fr);
+    }
+}
